@@ -1,0 +1,71 @@
+.mainbody{
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-left: 50px;
+	width: 700px;
+}
+.top{
+	margin: 20px;
+	margin-top: 10px;
+	padding-top: 10px;
+	color: blue;
+	
+}
+.bottom{
+	background-color: silver;
+	padding-left: 20px;
+}
+#ig{
+	float: left;
+}
+#lg{
+	float: right;
+	margin-right: 35px;
+}
+
+div#taylor{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding-top: 50px;
+	margin-top: 50px;
+	grid-column-gap: 20px;
+	grid-row-gap: 15px;
+	
+}
+
+#btnedit{
+	margin-left: 10px;
+}
+div#picture{
+	
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin-top: 20px;
+	margin-right: 25px;
+	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	padding: 10px;
+	padding-bottom:20px; 	
+}
+div#picture img{
+	width: 200px;
+	height: 200px;
+	
+}
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
+  height: 100%;
+  width: auto;
+}

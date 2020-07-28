@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex 5</title>
+	<script type="text/javascript">
+		function calculate(){
+			var num1=parseInt(document.myform.win.value);
+			var num2=parseInt(document.myform.draw.value);
+			var num3=parseInt(document.myform.loss.value);
+			
+			num1=num1*3;
+			num2=num2*1;
+			num3=num3*0;
+
+			var total=parseInt(num1+num2+num3);
+
+			document.myform.result.value=total;
+
+		}
+	</script>
+</head>
+<body>
+	<form name="myform">
+		<label for="win">Number of wins:</label>
+		<input type="number" name="win" id="win">
+		<br>
+		<label for="draw">Number of draws:</label>
+		<input type="number" name="draw" id="draw">
+		<br>
+		<label for="loss">Number of losses:</label>
+		<input type="number" name="lose" id="loss">
+		<br>
+		<input type="button" value="Calculate" onclick="calculate()"><br>
+		<label>Total points:</label>
+		<input type="number" name="result" id="result">
+	</form>
+</body>
+</html>

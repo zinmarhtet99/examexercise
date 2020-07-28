@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ex6</title>
+</head>
+
+<body>
+    <form>
+        <h2>Basic Calculator</h2>
+        First Number:<input type="number" id="firstnumber"> <br><br>
+        Second Number:<input type="number" id="secondnumber"> <br><br>
+        <button onclick="calculate()">Calculate</button> <br><br>
+        Sum:<input type="number" id="sum"><br><br>
+        Sub:<input type="number" id="sub"><br><br>
+        Mul:<input type="number" id="mul"><br><br>
+        Div:<input type="number" id="div"><br><br>
+        Mod:<input type="number" id="mod"><br><br>
+        <input type="reset" value="Clear">
+    </form>
+    <script>
+    function calculate() {
+        var num1 = parseInt(document.getElementById('firstnumber').value);
+        var num2 = parseInt(document.getElementById('secondnumber').value);
+
+        var sum = num1 + num2;
+        var sub = num1 - num2;
+        var mul = num1 * num2;
+        var div = num1 / num2;
+        var mod = num1 % num2;
+
+        document.getElementById('sum').value = sum;
+        document.getElementById('sub').value = sub;
+        document.getElementById('mul').value = mul;
+        document.getElementById('div').value = div;
+        document.getElementById('mod').value = mod;
+    }
+    </script>
+</body>
+
+</html>
